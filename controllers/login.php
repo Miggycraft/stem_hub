@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['role'] = $user['role'];
         header("Location: dashboard.php");
     } else {
-        echo "Invalid username or password.";
+        // TODO add error message
+        echo "DEBUG: Invalid username or password.";
     }
 }

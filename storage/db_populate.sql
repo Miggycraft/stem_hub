@@ -1,3 +1,5 @@
+-- TODO just make better populated shits here
+
 INSERT INTO lessons (title, description, content, video_url) VALUES
 ('Introduction to Programming', 'Learn the basics of programming with Python.', 'Programming is the process of creating a set of instructions that tell a computer how to perform a task...', 'https://example.com/videos/intro-to-programming.mp4'),
 ('The Solar System', 'Explore the planets and their characteristics.', 'The Solar System consists of the Sun and the objects that orbit it, including planets, moons, and asteroids...', 'https://example.com/videos/solar-system.mp4'),
@@ -5,8 +7,7 @@ INSERT INTO lessons (title, description, content, video_url) VALUES
 ('Electricity and Circuits', 'Learn how electricity flows and how circuits work.', 'Electricity is the flow of electrical charge, and circuits provide a path for this flow...', 'https://example.com/videos/electricity-circuits.mp4'),
 ('Introduction to Biology', 'Discover the basics of living organisms.', 'Biology is the study of life and living organisms, including their structure, function, growth, and evolution...', 'https://example.com/videos/intro-to-biology.mp4');
 
-
--- improve quizzes
+-- note: you can add mutliple quizzes for each lesson
 
 -- Quiz for Lesson 1: Introduction to Programming
 INSERT INTO quizzes (lesson_id, question, option_a, option_b, option_c, option_d, correct_answer) VALUES

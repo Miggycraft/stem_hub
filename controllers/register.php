@@ -12,9 +12,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bindParam(':role', $role);
 
     // TODO add one for duplicate entry
-    if ($stmt->execute()) {
-        echo "Registration successful! <a href='login.php'>Login here</a>";
-    } else {
-        echo "Registration failed. Please try again.";
+    // TODO add error shits
+    if ($stmt->execute()){
+        session_start();
+        $_SESSION['user_id'] = $conn->lastInsertId();
+        $_SESSION['role'] = $role;
+        header("Location: dashboard.php");
+        exit();
     }
 }

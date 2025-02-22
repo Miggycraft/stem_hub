@@ -1,6 +1,8 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -98,7 +100,7 @@ nav ul li a:hover {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-width: 30%;
+    width: 30%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-align: center;
@@ -124,4 +126,449 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Dashboard Styles */
+.dashboard-hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.dashboard-hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.dashboard-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.dashboard-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dashboard-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Lessons Page Styles */
+.lessons-hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lessons-hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.lessons-hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.lessons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.lesson-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(25%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.lesson-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.lesson-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lesson-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .lesson-card {
+        width: 100%;
+    }
+}
+
+/* Quiz Result Page Styles */
+.quiz-result {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-result h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.quiz-result p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Progress Page Styles */
+.progress-hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.progress-hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.progress-content {
+    margin: 40px 0;
+}
+
+.progress-content h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.progress-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-table th,
+.progress-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.progress-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.progress-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.progress-table td {
+    color: #333;
+}
+
+/* Forum Page Styles */
+.forum-hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forum-hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.forum-hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.forum-content {
+    margin: 40px 0;
+}
+
+.new-message {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-message h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.new-message label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.new-message select,
+.new-message textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.new-message textarea {
+    resize: vertical;
+}
+
+.message-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-list h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.message-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.message-card:last-child {
+    border-bottom: none;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.message-header .username {
+    font-weight: bold;
+}
+
+.message-body p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.timestamp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    /* Adds space between timestamp and delete button */
+}
+
+.timestamp {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Delete Button Styles */
+.delete-form {
+    margin-top: 10px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+/* Auth Page Styles */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.auth-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-box h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.auth-box input,
+.auth-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.auth-box select {
+    appearance: none;
+    background-color: #fff;
+}
+
+.auth-box .auth-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-box .auth-button:hover {
+    background-color: #0056b3;
+}
+
+.auth-box p {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.auth-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
 }

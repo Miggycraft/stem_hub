@@ -9,6 +9,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STEM Learning Hub</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/png" href="assets/main_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
